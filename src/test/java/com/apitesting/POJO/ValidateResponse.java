@@ -1,4 +1,4 @@
-package com.featurespace.POJO;
+package com.apitesting.POJO;
 
 public class ValidateResponse {
 

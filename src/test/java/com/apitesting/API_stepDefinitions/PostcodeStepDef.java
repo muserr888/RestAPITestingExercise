@@ -1,6 +1,6 @@
-package com.featurespace.API_stepDefinitions;
+package com.apitesting.API_stepDefinitions;
 
-import com.featurespace.utilities.ConfigurationReader;
+import com.apitesting.utilities.ConfigurationReader;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -75,9 +75,9 @@ public class PostcodeStepDef {
     @When("the user sends a GET request for {string}")
     public void the_user_sends_a_GET_request_for(String pathUrl) {
 
-        given().accept(ContentType.JSON)
-                .and().pathParam("postcode", "")
-                .when().get(baseURL + pathUrl);
+        response = given().accept(ContentType.JSON)
+                .and().pathParam("POSTCODE", pathUrl)
+                .when().get(baseURL + "/postcodes/{POSTCODE}");
         assertEquals(response.getStatusCode(), 404);
 
     }

@@ -40,8 +40,35 @@ GET /postcodes/{POSTCODE}/nearest
 
 **QA:**
 
-Write a Java application that allows a user to query and show details for a given UK postcode
+Write a Java application that allows a user to query and show details for a given UK postcode.
 
+The app should use the freely available (no API key needed) REST API at [http://postcodes.io](http://postcodes.io)
+
+Feel free to use any libraries you feel suitable, EXCEPT for any published that directly relate to postcodes.io – we’re interested in how you build an application to directly interact with a JSON-formatted REST API.
+
+Details:
+
+Console output only – no UI needed.
+
+It should query the API to:
+
+Validate the postcode parameter – invalid postcodes should produce an error message
+
+Print the country and region for that postcode.
+
+Print a list of the nearest postcodes, and their countries and regions.
+
+API methods of interest:
+
+GET /postcodes/{POSTCODE}
+
+GET /postcodes/{POSTCODE}/validate
+
+GET /postcodes/{POSTCODE}/nearest
+
+Consider carefully your error handling (eg API failure /  invalid input etc)
+
+Test postcode to use: **CB3 0FA**
 ------------------------------------------------------------------------------------------
 
 **Test RUN**

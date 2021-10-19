@@ -1,7 +1,7 @@
-package com.featurespace.API_stepDefinitions;
+package com.apitesting.API_stepDefinitions;
 
-import com.featurespace.POJO.ValidateResponse;
-import com.featurespace.utilities.ConfigurationReader;
+import com.apitesting.POJO.ValidateResponse;
+import com.apitesting.utilities.ConfigurationReader;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;

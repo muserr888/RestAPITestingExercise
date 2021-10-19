@@ -1,4 +1,4 @@
-package com.featurespace.runner;
+package com.apitesting.runner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
             plugin = {"html:target/failed-html-report"},
             features = "@target/rerun.txt",
-            glue = "com/featurespace/API_stepDefinitions"
+            glue = "com/apitesting/API_stepDefinitions"
     )
     public class FailedTestRunner {
 

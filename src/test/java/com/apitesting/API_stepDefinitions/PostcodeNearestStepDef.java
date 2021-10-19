@@ -1,15 +1,12 @@
-package com.featurespace.API_stepDefinitions;
+package com.apitesting.API_stepDefinitions;
 
-import com.featurespace.POJO.NearestPostcodeResponse;
-import com.featurespace.POJO.NearestResponse;
-import com.featurespace.utilities.ConfigurationReader;
-import com.google.gson.JsonObject;
+import com.apitesting.POJO.NearestPostcodeResponse;
+import com.apitesting.POJO.NearestResponse;
+import com.apitesting.utilities.ConfigurationReader;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
-import java.util.Arrays;
 
 import static io.restassured.RestAssured.given;
 

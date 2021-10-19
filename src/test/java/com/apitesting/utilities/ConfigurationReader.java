@@ -1,4 +1,4 @@
-package com.featurespace.utilities;
+package com.apitesting.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;
